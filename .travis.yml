@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+  - dockerfile
+
+before_install:
+  - docker build -t suresha52/myapp -f Dockerfile.dev
+
+scripts:
+  - docker run -e CI=true xyz npm run test -- --coverage
+
+  
