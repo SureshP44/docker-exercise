@@ -12,10 +12,10 @@ scripts:
 deploy:
   provider: elasticbeanstalk
   region: "ap-south-1"
-  app: "sample-docker"
-  env: "Sampledocker-env"
+  app: "docker-practice"
+  env: "Dockerpractice-env"
   bucket_name: "elasticbeanstalk-ap-south-1-869463445131"
-  bucket_path: "sample-docker"
+  bucket_path: "docker-practice"
   on:
     branch: master
   access_key_id: $awsBSKAccesskey
